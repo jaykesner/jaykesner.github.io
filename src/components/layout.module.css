@@ -1,7 +1,7 @@
 .container {
   margin: auto;
   max-width: 500px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Jost", "Segoe UI", sans-serif;
 }
 .heading {
   color: rebeccapurple;
@@ -10,6 +10,7 @@
   display: flex;
   list-style: none;
   padding-left: 0;
+  justify-content: center;
 }
 .nav-link-item {
   padding-right: 2rem;
@@ -18,7 +19,8 @@
   color: black;
 }
 .site-title {
-  font-size: 3rem;
+  font-size: 4rem;
   color: gray;
-  font-weight: 700;
+  font-weight: 900;
+  text-align: center;
 }
