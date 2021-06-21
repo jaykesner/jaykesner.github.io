@@ -1,16 +1,16 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
-import "./blog-post.module.css";
+import { blogPost } from "./blog-post.module.css";
 
 const BlogPost = ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <Layout>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+    <Layout pageTitle={post.frontmatter.title}>
+      <div
+        className={blogPost}
+        dangerouslySetInnerHTML={{ __html: post.html }}
+      />
     </Layout>
   );
 };

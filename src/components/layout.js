@@ -8,6 +8,7 @@ import {
   navLinkText,
   siteTitle,
 } from "./layout.module.css";
+import "normalize.css";
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -24,7 +25,7 @@ const Layout = ({ pageTitle, children }) => {
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
-      <p className={siteTitle}>{data.site.siteMetadata.title}</p>
+      <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>

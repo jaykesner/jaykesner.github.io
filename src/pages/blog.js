@@ -1,19 +1,25 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
+import { blogLink } from "./blog.module.css";
 
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="My Blog Posts">
       <p>{data.allMarkdownRemark.totalCount} Posts</p>
-      <ul>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <li key={node.id}>
-            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>-{" "}
-            {node.frontmatter.date} - {node.timeToRead} mins
-          </li>
-        ))}
-      </ul>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div key={node.id}>
+          <h2>
+            <Link className={blogLink} to={node.fields.slug}>
+              {node.frontmatter.title}
+            </Link>
+          </h2>
+          <div>
+            {node.frontmatter.date} - {node.timeToRead} min read
+          </div>
+          <p>{node.excerpt}</p>
+        </div>
+      ))}
     </Layout>
   );
 };

@@ -1,3 +1,10 @@
-p {
-  font-size: 1.2rem;
+.blog-post > p {
+  font-size: 1rem;
+}
+
+.blog-post > p > code {
+  background-color: rgb(83, 83, 83);
+  color: white;
+  border-radius: 4px;
+  padding: 0.5rem;
 }
