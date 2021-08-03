@@ -1,3 +1,5 @@
+/* old way of using node api to add data to markdown files + create routes 
+
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
@@ -40,3 +42,5 @@ exports.createPages = async ({ graphql, actions }) => {
   });
   //console.log(JSON.stringify(result, null, 4));
 };
+
+*/
