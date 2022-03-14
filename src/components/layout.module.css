@@ -1,12 +1,13 @@
 .container {
   margin: 0 auto;
   max-width: 500px;
-  font-family: "Jost", "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .site-title {
   font-size: 4rem;
-  color: gray;
-  font-weight: 900;
+  color: rgb(33, 32, 34);
+  font-weight: 700;
   text-align: center;
 }
 .nav-links {
@@ -22,5 +23,5 @@
   color: black;
 }
 .heading {
-  color: rebeccapurple;
+  color: rgb(46, 45, 49);
 }
