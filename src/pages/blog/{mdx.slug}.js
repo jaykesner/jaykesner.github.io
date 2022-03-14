@@ -1,11 +1,12 @@
 import * as React from "react";
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 import { graphql } from "gatsby";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 
 const pStyle = {
   fontSize: "1.25rem",
+  lineHeight: "1.75rem",
 };
 
 const codeStyle = {
