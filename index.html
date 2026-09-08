@@ -4,8 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jay Kesner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <p>Jay Kesner</p>
+  <div class="page">
+    <header class="hero">
+      <p class="hero-label">jaykesner.github.io</p>
+      <h1 class="hero-name">Jay Kesner</h1>
+      <p class="hero-lede">
+        Welcome to my Github Pages website. Here I will collect various projects and experiments that I'm working on.
+      </p>
+      <a class="hero-link" href="#projects">See projects</a>
+    </header>
+
+    <main id="projects" class="projects">
+      <div class="section-intro">
+        <h2>Projects</h2>
+        <p>A few things in progress. Details coming soon.</p>
+      </div>
+
+      <ul class="project-list">
+        <li class="project">
+          <span class="project-status">Coming soon</span>
+          <h3 class="project-title">Project one</h3>
+          <p class="project-summary">
+            Short description placeholder for the first project.
+          </p>
+        </li>
+        <li class="project">
+          <span class="project-status">Coming soon</span>
+          <h3 class="project-title">Project two</h3>
+          <p class="project-summary">
+            Short description placeholder for the second project.
+          </p>
+        </li>
+        <li class="project">
+          <span class="project-status">Coming soon</span>
+          <h3 class="project-title">Project three</h3>
+          <p class="project-summary">
+            Short description placeholder for the third project.
+          </p>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Jay Kesner</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
