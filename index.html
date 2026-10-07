@@ -17,36 +17,69 @@
       <p class="hero-lede">
         Welcome to my Github Pages website. Here I will collect various projects and experiments that I'm working on.
       </p>
-      <a class="hero-link" href="#projects">See projects</a>
     </header>
 
     <main id="projects" class="projects">
       <div class="section-intro">
         <h2>Projects</h2>
-        <p>A few things in progress. Details coming soon.</p>
+        <p>A few things I&rsquo;m building and experimenting with.</p>
       </div>
 
       <ul class="project-list">
-        <li class="project">
-          <span class="project-status">Coming soon</span>
-          <h3 class="project-title">Project one</h3>
+        <li class="project project--featured">
+          <a class="project-thumb" href="https://acb-calc.netlify.app" target="_blank" rel="noopener noreferrer">
+            <img src="images/acb-calc.png" alt="Screenshot of the ACB Calculator live site" width="1280" height="800" loading="lazy">
+          </a>
+          <h3 class="project-title">ACB Calculator</h3>
           <p class="project-summary">
-            Short description placeholder for the first project.
+            Anticholinergic burden scoring for medication review in older adults.
+            Search medicines, total the ACB score, and review safer alternatives in one place.
+          </p>
+          <p class="project-links">
+            <a class="project-link" href="https://acb-calc.netlify.app" target="_blank" rel="noopener noreferrer">Live site</a>
+            <a class="project-link" href="https://github.com/jaykesner/acbcalc" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </p>
+        </li>
+        <li class="project project--featured">
+          <a class="project-thumb" href="https://fast-chat-direct.netlify.app" target="_blank" rel="noopener noreferrer">
+            <img class="project-thumb-img--center" src="images/fast-chat.png" alt="Screenshot of the Fast Chat live site" width="1280" height="800" loading="lazy">
+          </a>
+          <h3 class="project-title">Fast Chat</h3>
+          <p class="project-summary">
+            Real-time chat rooms with Firestore. Pick a name, create a room, and share the code.
+          </p>
+          <p class="project-links">
+            <a class="project-link" href="https://fast-chat-direct.netlify.app" target="_blank" rel="noopener noreferrer">Live site</a>
+            <a class="project-link" href="https://github.com/jaykesner/fast-chat" target="_blank" rel="noopener noreferrer">GitHub</a>
           </p>
         </li>
         <li class="project">
-          <span class="project-status">Coming soon</span>
-          <h3 class="project-title">Project two</h3>
+          <h3 class="project-title">Nucci&rsquo;s Lawn Service</h3>
           <p class="project-summary">
-            Short description placeholder for the second project.
+            Project details coming soon.
           </p>
         </li>
         <li class="project">
-          <span class="project-status">Coming soon</span>
-          <h3 class="project-title">Project three</h3>
+          <h3 class="project-title">JCSWA Redesign</h3>
           <p class="project-summary">
-            Short description placeholder for the third project.
+            Project details coming soon.
           </p>
+        </li>
+        <li class="project">
+          <h3 class="project-title">Community Cab</h3>
+          <p class="project-summary">
+            Project details coming soon.
+          </p>
+        </li>
+        <li class="project project--pixel">
+          <h3 class="project-title">Pixel Art Animations</h3>
+          <p class="project-summary">
+            Seamless looping scenes drawn into tiny framebuffers&mdash;a floating cottage and a wizard&rsquo;s grove.
+          </p>
+          <div class="pixel-gallery" aria-hidden="true">
+            <canvas id="c" width="240" height="135"></canvas>
+            <canvas id="wizards-grove" width="192" height="144"></canvas>
+          </div>
         </li>
       </ul>
     </main>
@@ -59,5 +92,7 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+  <script src="cottage-pixel.js"></script>
+  <script type="module" src="wizards-grove-pixel.js"></script>
 </body>
 </html>
