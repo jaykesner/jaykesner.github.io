@@ -6,14 +6,20 @@
   <title>Jay Kesner</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="scanlines" aria-hidden="true"></div>
   <div class="page">
     <header class="hero">
+      <div class="meta-row">
+        <span class="meta-tag">JK // PORTFOLIO</span>
+        <span class="meta-tag">SITE.01</span>
+        <span class="meta-tag">STATUS: LIVE</span>
+      </div>
       <p class="hero-label">jaykesner.github.io</p>
-      <h1 class="hero-name">Jay Kesner</h1>
+      <h1 class="hero-name">Jay<br>Kesner</h1>
       <p class="hero-lede">
         Welcome to my Github Pages website. Here I will collect various projects and experiments that I'm working on.
       </p>
@@ -21,15 +27,20 @@
 
     <main id="projects" class="projects">
       <div class="section-intro">
+        <div class="section-kicker">
+          <span class="meta-tag">02 / INDEX</span>
+          <span class="meta-tag">N=6</span>
+        </div>
         <h2>Projects</h2>
         <p>A few things I&rsquo;m building and experimenting with.</p>
       </div>
 
       <ul class="project-list">
-        <li class="project project--featured">
+        <li class="project project--featured" data-id="01">
           <a class="project-thumb" href="https://acb-calc.netlify.app" target="_blank" rel="noopener noreferrer">
             <img src="images/acb-calc.png" alt="Screenshot of the ACB Calculator live site" width="1280" height="800" loading="lazy">
           </a>
+          <p class="project-id" aria-hidden="true">01</p>
           <h3 class="project-title">ACB Calculator</h3>
           <p class="project-summary">
             Anticholinergic burden scoring for medication review in older adults.
@@ -40,10 +51,11 @@
             <a class="project-link" href="https://github.com/jaykesner/acbcalc" target="_blank" rel="noopener noreferrer">GitHub</a>
           </p>
         </li>
-        <li class="project project--featured">
+        <li class="project project--featured" data-id="02">
           <a class="project-thumb" href="https://fast-chat-direct.netlify.app" target="_blank" rel="noopener noreferrer">
             <img class="project-thumb-img--center" src="images/fast-chat.png" alt="Screenshot of the Fast Chat live site" width="1280" height="800" loading="lazy">
           </a>
+          <p class="project-id" aria-hidden="true">02</p>
           <h3 class="project-title">Fast Chat</h3>
           <p class="project-summary">
             Real-time chat rooms with Firestore. Pick a name, create a room, and share the code.
@@ -53,38 +65,49 @@
             <a class="project-link" href="https://github.com/jaykesner/fast-chat" target="_blank" rel="noopener noreferrer">GitHub</a>
           </p>
         </li>
-        <li class="project">
+        <li class="project" data-id="03">
+          <p class="project-id" aria-hidden="true">03</p>
           <h3 class="project-title">Nucci&rsquo;s Lawn Service</h3>
           <p class="project-summary">
             Project details coming soon.
           </p>
         </li>
-        <li class="project">
+        <li class="project" data-id="04">
+          <p class="project-id" aria-hidden="true">04</p>
           <h3 class="project-title">JCSWA Redesign</h3>
           <p class="project-summary">
             Project details coming soon.
           </p>
         </li>
-        <li class="project">
+        <li class="project" data-id="05">
+          <p class="project-id" aria-hidden="true">05</p>
           <h3 class="project-title">Community Cab</h3>
           <p class="project-summary">
             Project details coming soon.
           </p>
         </li>
-        <li class="project project--pixel">
+        <li class="project project--pixel" data-id="06">
+          <p class="project-id" aria-hidden="true">06</p>
           <h3 class="project-title">Pixel Art Animations</h3>
           <p class="project-summary">
             Seamless looping scenes drawn into tiny framebuffers&mdash;a floating cottage and a wizard&rsquo;s grove.
           </p>
           <div class="pixel-gallery" aria-hidden="true">
-            <canvas id="c" width="240" height="135"></canvas>
-            <canvas id="wizards-grove" width="192" height="144"></canvas>
+            <div class="pixel-item">
+              <span class="thumb-meta">PX.01 // COTTAGE</span>
+              <canvas id="c" width="240" height="135"></canvas>
+            </div>
+            <div class="pixel-item">
+              <span class="thumb-meta">PX.02 // GROVE</span>
+              <canvas id="wizards-grove" width="192" height="144"></canvas>
+            </div>
           </div>
         </li>
       </ul>
     </main>
 
     <footer class="footer">
+      <span class="meta-tag">EOF</span>
       <p>&copy; <span id="year"></span> Jay Kesner</p>
     </footer>
   </div>
