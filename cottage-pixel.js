@@ -771,11 +771,8 @@ function render(t) {
 function fit() {
   const parent = canvas.parentElement;
   const maxW = parent ? parent.clientWidth : window.innerWidth;
-  // Match Wizard's Grove display width (192×integer), not cottage framebuffer width.
-  const s = Math.max(1, Math.floor(maxW / 192));
-  const displayW = 192 * s;
-  canvas.style.width = `${displayW}px`;
-  canvas.style.height = `${(H / W) * displayW}px`;
+  canvas.style.width = `${maxW}px`;
+  canvas.style.height = `${(H / W) * maxW}px`;
 }
 
 /** `?t=4.5` freezes the loop at that second, handy for inspecting a single frame. */

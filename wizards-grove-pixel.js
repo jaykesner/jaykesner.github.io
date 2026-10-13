@@ -1097,9 +1097,8 @@ function render(t) {
 function fit() {
   const parent = canvas.parentElement;
   const maxW = parent ? parent.clientWidth : window.innerWidth;
-  const s = Math.max(1, Math.floor(maxW / W));
-  canvas.style.width = `${W * s}px`;
-  canvas.style.height = `${H * s}px`;
+  canvas.style.width = `${maxW}px`;
+  canvas.style.height = `${(H / W) * maxW}px`;
 }
 
 let lastFrame = -1;
