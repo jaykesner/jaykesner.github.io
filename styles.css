@@ -283,6 +283,14 @@ body::after {
   transform: translateY(-1px);
 }
 
+.project-thumb--static,
+.project-thumb--static:hover,
+.project-thumb--static:focus-visible {
+  border-color: var(--line-strong);
+  transform: none;
+  cursor: default;
+}
+
 .thumb-meta {
   position: absolute;
   top: 0.45rem;
@@ -339,6 +347,17 @@ body::after {
   color: var(--bg);
   background: var(--accent);
   border-color: var(--accent);
+}
+
+.project-status {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--line-strong);
+  padding: 0.35rem 0.55rem;
 }
 
 .pixel-gallery {
